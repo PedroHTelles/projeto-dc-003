@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-br" translate="no">
+    <head>
+        <title>Dank-Code</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0" maximun-scale="1.0">
+        <meta name="author" content="Pedro Telles">
+        <meta name="description" content="Projeto-003 da Dank-Code do Curso de HTML e CSS">
+        <meta name="keywords" content="projeto,dank,code,aprendendo,html,css,responsivo">
+
+        <link rel="stylesheet" href="estilo/style.css">
+        <link rel="shortcur icon" href="imagens/favicon-dc.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="center-1">
+                <div id="header-top">
+                    <img src="imagens/logo.png" title="Logo Dank-Code" alt="Logo Dank-Code">
+                    <span onclick="clickMenu" class="material-icons">menu</span>
+                    <ul id="imenu">
+                        <li><a title="Ir para página inicial" target="self" rel="next" href="#">home</a></li>
+                        <li><a title="Ir para informações de serviços" target="self" rel="next" href="#">serviços</a></li>
+                        <li><a title="Ir para informações sobre" target="self" rel="next" href="#">sobre</a></li>
+                        <li><a title="Ir para informações de contato" target="self" rel="next" href="#">contato</a></li>
+                    </ul>
+                </div>
+                <div id="header-mid">
+                    <h1>Sistemas próprios<br>para empresas autênticas</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>Deleniti voluptate nihil qui veritatis ullam voluptates rem.</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="main-top">
+                <div class="center-2">
+                    <div id="box-1">
+                        <h1>Desenvolvemos sistemas únicos</h1>
+                        <p>Para todas as plataformas e diversos segmentos:</p>
+                        <ul>
+                            <li>Lojas virtuais</li>
+                            <li>Sistemas institucionais</li>
+                            <li>Sistemas corporativo</li>
+                            <li>Muitos outros</li>
+                        </ul>
+                        <a title="Ir para informações de contato" target="self" rel="next" href="#">Entre em contato</a>
+                    </div>
+                    <picture>
+                        <source media="(max-width:580px)" srcset="imagens/celular-corte3.png" type="image/png">
+                        <img title="Imagem de celular e tablet" src="imagens/celular-corte.png" alt="Imagem de celular e tablet">
+                    </picture>
+                </div>  
+            </section>
+            <section id="main-mid">
+                <div class="center-3">
+                    <div id="box-2">
+                        <h2>Desenvolvido por pessoas e para pessoas</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa corrupti dolor deleniti magnam eaque voluptates consectetur sint ut maiores, iure, non dicta nisi odit accusamus. Nesciunt magni itaque architecto numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. , amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div id="box-3"> 
+                    <div id="box-3-left">
+                        <div id="box-3-left-inside">
+                            <h2>Nosso time</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aperiam incidunt aut quam velit saepe natus molestias similique ratione, aliquam repellendus voluptas consequuntur.</p>
+                        </div>
+                    </div>
+                    <div id="box-3-right">
+                        <div id="box-3-right-inside">
+                            <div class="container-1">
+                                <h2>Guilherme Grillo</h2>
+                                <small>Co-founder / Desenvolvedor</small>
+                            </div>
+                            <img title="Imagem de Guilherme Grillo" src="imagens/guilhermegrillo.png" alt="Imagem de Guilherme Grillo">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, dicta at. Libero fugit officiis quos nihil unde, quis, corporis, sit soluta debitis autem voluptatem.</p>
+                        </div>
+                    </div>
+                </div>
+                <img title="Imagem ilustrativa do nosso trabalho" src="imagens/layer-corte.png" alt="Imagem ilustrativa do nosso trabalho">
+            </section>
+            <section id="main-bot">
+                <div class="center-4">
+                    <div id="box-4">
+                        <div class="center-main-bot">
+                            <h2>Entre em contato</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident nesciunt quos in veniam.</p>
+                            <form action="contato.php" method="get" autocomplete="on">
+                                <div>
+                                    <input type="text" name="nome" id="inome" placeholder="Nome" autocomplete="name" minlength="2" maxlength="50">
+                                </div>
+                                <div>
+                                    <input type="email" name="email" id="iemail" placeholder="E-mail" autocomplete="email">
+                                </div>
+                                <div>
+                                    <textarea name="mensagem" id="imensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                                </div>
+                                <input type="submit" value="Enviar">
+                            </form>
+                        </div>
+                    </div>
+                    <div id="box-5">
+                        <div class="center-main-bot">
+                            <h2>Faça uma visita</h2>
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1grk2WRmlG7HbtEGhHeH5juttou4&hl=en_US&ehbc=2E312F" width="100%" height="300px"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="center-3">
+                <small id="footer-left">admin@exempleemail.com - (99)99999-9999</small>
+                <small id="footer-right">Feito por pessoas e para pessoas.</small>
+            </div>
+        </footer>
+        <!-----
+        <script>
+            function clickMenu(){
+                if (imenu.style.display == 'none'){
+                    imenu.style.display = 'block'
+                } else{
+                    imenu.style.display = 'none'
+                }
+            }
+        </script>
+
+        <script>
+            function mudouTamanho(){
+                if (window.innerWidth >= 700){
+                    imenu.style.display = 'block'
+                } else{
+                    imenu.style.display = 'none'
+                }
+            }
+
+            function clickMenu(){
+                if (imenu.style.display == 'none'){
+                    imenu.style.display = 'block'
+                } else{
+                    imenu.style.display = 'none'
+                }
+            } 
+        </script>
+        -->
+    </body>
+</html>
