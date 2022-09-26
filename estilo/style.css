@@ -97,6 +97,8 @@ header div#header-top{
 
 header div#header-top > img{
     width: 180px;
+
+    filter: drop-shadow(10px 10px 5px black);
 }
 
 header .material-icons{
