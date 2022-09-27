@@ -708,14 +708,26 @@ footer small#footer-right{
         
         transition: 1s;
     }
-    
+
     header div#header-top > ul{   
         width: 100%;
+
+        background-image: linear-gradient(to top, #835fa888, transparent);
+
+        padding: 10px;
 
         display: none;
     
         transition: 1s;
     }
+
+    header .material-icons:hover + #imenu{
+        display: flex;
+
+        transition: 1.2s;
+    }
+    
+
     
     header div#header-top > ul > li{
         padding-top: 15px;
